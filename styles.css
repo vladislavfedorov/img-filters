@@ -1,0 +1,15 @@
+html {
+  background-color: PaleTurquoise;
+}
+
+canvas {
+  border: black 2px solid;
+  width: 255px;
+  height: 150px;
+  background-color: DodgerBlue;
+}
+
+input {
+  background-color: DodgerBlue;
+  border: 2px solid black;
+}
