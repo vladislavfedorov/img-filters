@@ -61,6 +61,25 @@ var imgcanvas = document.getElementById("canvas-id");
 image.drawTo(imgcanvas);
 };
 
+function fifthfilter() {
+  
+	var canvas = document.getElementById("canvas-id");
+	var ctx = canvas.getContext("2d");
+
+	ctx.strokeStyle = "red";
+	ctx.lineWidth = 10;
+  
+	ctx.beginPath();
+	ctx.moveTo(0, 0);
+	ctx.lineTo(canvas.width, canvas.height);
+	ctx.stroke();
+
+	ctx.beginPath();
+	ctx.moveTo(0, canvas.height);
+	ctx.lineTo(canvas.width, 0);
+	ctx.stroke();
+};
+
 function resetimg(){
   var imgcanvas = document.getElementById("canvas-id");
   var fileinput = document.getElementById("finput");
